@@ -21,7 +21,7 @@ class SpiderMain(object):
                 new_urls, new_data = self.parser.parse(new_url, html_content)
                 self.urls.add_new_urls(new_urls)
                 self.outputer.collect_data(new_data)
-                if count == 100:
+                if count == 200:
                     break
                 count += 1
             except:
@@ -29,7 +29,7 @@ class SpiderMain(object):
 
         self.outputer.output_html()
 
-# https://baike.baidu.com/item/%E6%B8%85%E6%B0%B4%E7%90%86%E7%BA%B1/17869743?fr=aladdin
+
 if __name__ == '__main__':
     root_url = "https://baike.baidu.com/item/清水理纱"
     obj_spider = SpiderMain()
