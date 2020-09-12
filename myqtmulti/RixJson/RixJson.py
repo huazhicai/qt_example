@@ -1,0 +1,2 @@
+
+ValueType = ['STRING', 'REAL', 'BOOLEAN', 'OBJECT', 'ARRAY', 'UNKOWNED']
